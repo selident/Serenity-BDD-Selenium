@@ -31,5 +31,6 @@ Libraries / Tech Stacks:
 
         chrome.switches=--headless
 
-    Note that your computer need to have Chrome version 80 installed before running test.
+    Note that your computer needs to have Chrome version 80 installed before running test.
+    
     Also this test suite target to JAVA 11 and Windows OS.
