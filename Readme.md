@@ -1,9 +1,32 @@
-# Selenium automation demo project
+# Serenity BDD & Selenium demo project
 
-This is a maven project using Serenity framework and Selenium to automate web tests.
+### Overview ###
 
-The application under test is Utest website.
+**The high level structure**
 
-To build the project & run tests, please go to the main folder (which contains pom.xml file), then run the following command:
+[Serenity BDD [Selenium WebDriver]] <=====> chromeDriver <=====> Chrome browser
 
-$ mvn clean verify
+Libraries / Tech Stacks:
+
+- JUnit
+- Maven
+- Selenium WebDriver
+- Serenity BDD
+
+### How To Run ###
+
+  * **Run tests on local**
+  
+    1. Clone repo
+    2. Run Maven command to execute tests
+        
+        ```
+        mvn clean verify
+        ```
+    3. A index.html report will be created at `target/site/serenity/index.html` 
+    
+  * **Run with headless mode?**
+
+    If you want to run tests with headless mode, un-comment the below property in `serenity.properties`
+
+        chrome.switches=--headless

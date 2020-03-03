@@ -18,6 +18,7 @@ public class LandingPage extends PageObject {
 
     public void navigateToLandingPage(String landingURL) {
         this.driver.navigate().to(landingURL);
+        this.driver.manage().window().maximize();
     }
 
     public void clickSignUpForFree() {
