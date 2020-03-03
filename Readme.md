@@ -30,3 +30,6 @@ Libraries / Tech Stacks:
     If you want to run tests with headless mode, un-comment the below property in `serenity.properties`
 
         chrome.switches=--headless
+
+    Note that your computer need to have Chrome version 80 installed before running test.
+    Also this test suite target to JAVA 11 and Windows OS.
