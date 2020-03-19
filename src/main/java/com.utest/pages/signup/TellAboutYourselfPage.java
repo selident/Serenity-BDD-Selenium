@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class SignUp1Page extends PageObject {
+public class TellAboutYourselfPage extends PageObject {
 
     protected WebDriver driver;
 
@@ -54,7 +54,7 @@ public class SignUp1Page extends PageObject {
     @FindBy(id = "emailError")
     private WebElement invalidEmailMsg;
 
-    public SignUp1Page(WebDriver driver) {
+    public TellAboutYourselfPage(WebDriver driver) {
         this.driver = driver;
     }
 

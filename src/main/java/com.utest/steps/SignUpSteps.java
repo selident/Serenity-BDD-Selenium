@@ -1,7 +1,7 @@
 package com.utest.steps;
 
 import com.utest.pages.LandingPage;
-import com.utest.pages.signup.SignUp1Page;
+import com.utest.pages.signup.TellAboutYourselfPage;
 import com.utest.pages.signup.SignUp2Page;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
@@ -11,7 +11,7 @@ import java.util.List;
 
 public class SignUpSteps extends ScenarioSteps {
 
-    SignUp1Page signUp1Page;
+    TellAboutYourselfPage tellAboutYourselfPage;
 
     SignUp2Page signUp2Page;
 
@@ -25,19 +25,19 @@ public class SignUpSteps extends ScenarioSteps {
 
     @Step
     public void fill_info_for_first_sign_up_step(String firstName, String lastName, String email, String gender, String month, String day, String year, List<String> languages) {
-        signUp1Page.enterFirstName(firstName);
-        signUp1Page.enterLastName(lastName);
-        signUp1Page.enterEmail(email);
-        signUp1Page.selectGender(gender);
-        signUp1Page.selectBirthMonth(month);
-        signUp1Page.selectBirthDay(day);
-        signUp1Page.selectBirthYear(year);
-        signUp1Page.enterLanguages(languages);
+        tellAboutYourselfPage.enterFirstName(firstName);
+        tellAboutYourselfPage.enterLastName(lastName);
+        tellAboutYourselfPage.enterEmail(email);
+        tellAboutYourselfPage.selectGender(gender);
+        tellAboutYourselfPage.selectBirthMonth(month);
+        tellAboutYourselfPage.selectBirthDay(day);
+        tellAboutYourselfPage.selectBirthYear(year);
+        tellAboutYourselfPage.enterLanguages(languages);
     }
 
     @Step
     public void submit_step_one() {
-        signUp1Page.clickNextLocationButton();
+        tellAboutYourselfPage.clickNextLocationButton();
     }
 
     @Step
@@ -47,6 +47,6 @@ public class SignUpSteps extends ScenarioSteps {
 
     @Step
     public void verify_if_message_invalid_email_appear(String email) {
-        Assert.assertTrue("Invalid email message did not appear!", signUp1Page.isEmailValid(email));
+        Assert.assertTrue("Invalid email message did not appear!", tellAboutYourselfPage.isEmailValid(email));
     }
 }

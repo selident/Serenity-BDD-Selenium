@@ -22,6 +22,6 @@ public class LandingPage extends PageObject {
     }
 
     public void clickSignUpForFree() {
-        signUpBtn.click();
+        $(signUpBtn).waitUntilClickable().click();
     }
 }
