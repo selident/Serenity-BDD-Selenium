@@ -9,8 +9,8 @@ public class LandingPage extends PageObject {
 
     protected WebDriver driver;
 
-    @FindBy(linkText = "Sign Up For Free")
-    private WebElement signUpBtn;
+    @FindBy(xpath = "//*[@href='/users/sign_in']")
+    private WebElement signInBtn;
 
     public LandingPage(WebDriver driver) {
         this.driver = driver;
@@ -21,7 +21,7 @@ public class LandingPage extends PageObject {
         this.driver.manage().window().maximize();
     }
 
-    public void clickSignUpForFree() {
-        $(signUpBtn).waitUntilClickable().click();
+    public void clickSignIn() {
+        $(signInBtn).click();
     }
 }
