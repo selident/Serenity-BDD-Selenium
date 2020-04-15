@@ -1,4 +1,4 @@
-# Serenity BDD & Selenium demo project
+# serenity-selenium-junit demo project
 
 ### Overview ###
 
